@@ -1,0 +1,82 @@
+name: Idea
+description: Capture a new product or technical idea for future evaluation.
+title: "[Idea]: "
+labels:
+  - idea
+
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Idea Summary
+      description: Describe the idea in one or two sentences.
+      placeholder: What is the idea?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem does this solve?
+      placeholder: Who has this problem and why is it important?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How do you think it should work?
+      placeholder: Describe the user experience or implementation.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Estimated Effort
+      options:
+        - XS (< 1 hour)
+        - S (1-4 hours)
+        - M (1-2 days)
+        - L (3-5 days)
+        - XL (1+ week)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Expected Impact
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: validation
+    attributes:
+      label: Validation
+      options:
+        - label: Users have requested this
+        - label: This aligns with product goals
+        - label: A similar solution already exists
+        - label: Research is still needed
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Add links, sketches, references, or anything else that might help.
