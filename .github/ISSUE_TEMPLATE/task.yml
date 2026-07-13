@@ -1,5 +1,30 @@
-Description
+name: Task
+description: Track development work.
+title: "[Task]: "
+labels:
+  - task
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the work to be completed.
+    validations:
+      required: true
 
-Acceptance Criteria
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: What must be true before this task is complete?
+      placeholder: |
+        - [ ] Requirement 1
+        - [ ] Requirement 2
+    validations:
+      required: true
 
-Dependencies
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Dependencies, links, or additional information.

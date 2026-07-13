@@ -1,7 +1,32 @@
-Problem
+name: Feature Request
+description: Suggest a new feature or enhancement.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are you trying to solve?
+    validations:
+      required: true
 
-Solution
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution.
+    validations:
+      required: true
 
-Alternatives
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered other approaches?
 
-Additional Context
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
